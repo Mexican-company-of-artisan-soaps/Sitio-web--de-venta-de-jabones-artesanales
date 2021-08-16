@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mostrar y ocultar</title>
+<link href="css/estilo_chido_de_boton5.css" type="text/css" rel="stylesheet"/>
+<script language="javascript">
+ function Mostrar5(){
+ document.getElementById("caja5").style.display="block";	 
+ }
+  function Ocultar5(){
+ document.getElementById("caja5").style.display="none";	 
+ }
+ function Mostrar5_Ocultar5(){
+	 var caja5 = document.getElementById("caja5");
+	 
+	 if (caja5.style.display == "none"){
+		 Mostrar5();
+		 		 document.getElementById("boton5").value="Ver menos";	 
+}
+         else {
+		 Ocultar5(); document.getElementById("boton5").value="Ver mas";
+		 }}
+</script>
+</head>
+
+<body>
+<section id="caja5" style="width:400px;
+                          height:auto; overflow:hidden; display:none;
+                          ">
+                          <div><p><font color="#FFFFFF">gggg</font></p></div>
+</section>
+<input type="submit" id="boton5" value="Ver mas" onClick="Mostrar5_Ocultar5()"/>
+</body>
+</html>
